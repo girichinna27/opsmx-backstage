@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: engineering
+  description: Opsmx Engineering department
+spec:
+  type: department
+  # Intentional no profile for testing
+  parent: opsmx-org
+  children: [dev, qa]

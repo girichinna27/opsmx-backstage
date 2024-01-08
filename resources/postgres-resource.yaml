@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: postgres
+  description: Stores supply chain data
+spec:
+  type: database
+  owner: ssd-team
+  system: ssd

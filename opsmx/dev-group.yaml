@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: dev
+  description: OpsMx Dev Group
+spec:
+  type: sub-department
+  profile:
+    displayName: Opsmx
+    email: info@opsmx.com
+  parent: engineering
+  children: [ssd-team, isd-team]

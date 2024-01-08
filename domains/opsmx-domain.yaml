@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: opsmx
+  description: Everything related to OpsMx
+  title: OpsMx
+  links:
+    - url: https://opsmx.com/
+      title: Security First Continuous Delivery
+spec:
+  owner: ssd-team

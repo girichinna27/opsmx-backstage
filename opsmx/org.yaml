@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: opsmx-org
+  description: Security First Continuous Delivery
+  links:
+    - url: http://www.opsmx.com/
+      title: Website
+      #    - url: https://meta.wikimedia.org/wiki/
+      # title: Intranet
+spec:
+  type: organization
+  profile:
+    displayName: Opsmx
+    email: info@opsmx.com
+  children: [engineering]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: example-groups
+  description: A collection of all OpsMx Groups
+spec:
+  targets:
+    - ./opsmx-group.yaml
+    - ./ssd-team.yaml
+    - ./isd-team.yaml  

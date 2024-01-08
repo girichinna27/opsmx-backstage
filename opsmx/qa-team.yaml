@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: qa-team
+  description: QA Team
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    email: qateam@opsmx.com
+  parent: qa
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jayasree-k
+spec:
+  profile:
+    # Intentional no displayName for testing
+    email: jayasree@opsmx.io
+  memberOf: [qa-team]

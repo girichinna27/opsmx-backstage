@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: ssd
+  description: Everything related to SSD
+  tags:
+    - supplychain
+spec:
+  owner: ssd-team
+  domain: opsmx

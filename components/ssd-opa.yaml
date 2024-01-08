@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ssd-opa
+  description: SSD OPA Policies
+  tags:
+    - golang
+    - data
+      #links:
+      #    - url: https://example.com/user
+      #      title: Examples Users
+      #      icon: user
+      #  annotations:
+      #    backstage.io/linguist: 'https://github.com/girichinna27/bs-components/tree/master/plugins/playlist'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: ssd-team
+  system: ssd-system
+  apiConsumedBy: ['component:ssd-ui']
+  providesApis:
+    - policy

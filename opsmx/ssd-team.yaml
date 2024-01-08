@@ -1,0 +1,45 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: ssd-team
+  description: SSD Team
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    email: ssdteam@opsmx.com
+  parent: dev
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: girichinna27
+spec:
+  profile:
+    # Intentional no displayName for testing
+    email: giri@opsmx.io
+  memberOf: [ssd-team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: rsh09
+spec:
+  profile:
+    displayName: Ravikumar H
+    email: ravikumar.hawaldar@opsmx.io
+  memberOf: [ssd-team]
+---
+# This user is added as an example, to make it more easy for the "Guest"
+# sign-in option to demonstrate some entities being owned. In a regular org,
+# a guest user would probably not be registered like this.
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ssd-guest
+spec:
+  profile:
+    displayName: SSD Guest User
+    email: ssdguest@ospmx.io
+  memberOf: [ssd-team]

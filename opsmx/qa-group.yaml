@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: qa
+  description: OpsMx QA Group
+spec:
+  type: sub-department
+  profile:
+    displayName: QA
+    email: info@opsmx.com
+  parent: engineering
+  children: [qa-team]

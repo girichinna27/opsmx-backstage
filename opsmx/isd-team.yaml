@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: isd-team
+  description: ISD Team
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    email: isdteam@opsmx.com
+  parent: dev
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: BasavaRajSomesetty
+spec:
+  profile:
+    # Intentional no displayName for testing
+    email: basavaraj.somesetty@opsmx.io 
+  memberOf: [isd-team]
