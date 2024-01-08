@@ -22,6 +22,9 @@ metadata:
   description: A collection of all OpsMx Groups
 spec:
   targets:
-    - ./org.yaml
+    - ./engineering-group.yaml
+    - ./dev-group.yaml
+    - ./qa-group.yaml
     - ./ssd-team.yaml
-    - ./isd-team.yaml  
+    - ./isd-team.yaml
+    - ./qa-team.yaml
