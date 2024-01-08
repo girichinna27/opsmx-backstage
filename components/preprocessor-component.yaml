@@ -16,6 +16,6 @@ spec:
   type: service
   lifecycle: experimental
   owner: ssd-team
-  system: ssd-system
+  system: ssd
   dependsOn: ['resource:postgres']
   apiConsumedBy: ['component:ssd-ui']
