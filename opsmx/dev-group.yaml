@@ -6,7 +6,7 @@ metadata:
 spec:
   type: sub-department
   profile:
-    displayName: Opsmx
+    displayName: Dev Group
     email: info@opsmx.com
   parent: engineering
   children: [ssd-team, isd-team]
