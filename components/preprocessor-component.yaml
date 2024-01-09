@@ -2,6 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: preprocessor
+  annotations:
+    'backstage.io/kubernetes-id': preprocessor
   description: SSD Data preprocessor
   tags:
     - golang
