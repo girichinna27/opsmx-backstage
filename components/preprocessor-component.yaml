@@ -2,6 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: preprocessor
+  kubernetes:
+    cluster:
+      annotations:
+        gke.project: sandbox-spin
+        gke.location: us-central1-a  
   annotations:
     'backstage.io/kubernetes-id': preprocessor
   description: SSD Data preprocessor
